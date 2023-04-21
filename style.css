@@ -344,7 +344,6 @@
 	#projects {
 		background-color: #f7f7f7;
 		padding: 50px 0;
-		border: 2px solid #ccc;
 	  }
 	  
 	  .project-box {
@@ -493,5 +492,3 @@
 	  #hire-me-box button[type="submit"]:hover {
 		background-color: #ddd;
 	  }
-
-	  
