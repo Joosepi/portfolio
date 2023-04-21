@@ -42,6 +42,8 @@
 	position: fixed;
 	width: 100%;
 	z-index: 999;
+	background: linear-gradient(90deg, #FFC0CB, #FFFFFF);
+	padding: 20px;
   }
   
   nav ul {
@@ -139,7 +141,7 @@
   
   #about {
 	padding: 80px 20px;
-	background-color: #fff;
+	
 	border-top: 1px solid #ddd;
 	border-bottom: 1px solid #ddd;
   }
@@ -279,6 +281,8 @@
 		background-color: #f9f9f9;
 		border: 2px solid #ccc;
 		margin-bottom: 50px;
+		padding: 80px 20px;
+		background: linear-gradient(-70deg, #ffffff 0%, #FFC0CB 80%);
 	  }
 	  
 	  #skills h2 {
@@ -489,3 +493,5 @@
 	  #hire-me-box button[type="submit"]:hover {
 		background-color: #ddd;
 	  }
+
+	  
