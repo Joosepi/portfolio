@@ -107,38 +107,6 @@
 	color: black;
   }
   
-  
-  #gallery {
-	padding: 80px 20px;
-	background-color: #f9f9f9;
-  }
-  
-  #gallery h2 {
-	font-size: 36px;
-	margin-bottom: 40px;
-	text-align: center;
-  }
-  
-  .photo-grid {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 20px;
-  }
-  
-  .photo-grid img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	border: 2px solid #fff;
-	transition: all 0.3s ease-in-out;
-  }
-  
-  .photo-grid img:hover {
-	transform: scale(1.05);
-	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  
   #about {
 	padding: 80px 20px;
 	
@@ -167,7 +135,7 @@
   }
   
   
-* {
+    * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
