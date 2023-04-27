@@ -27,17 +27,18 @@
 
   </body>
 
-    <section id="about">
-      <div class="container">
-        <h2>About Me</h2>
-        <ul>
-          <li><strong>Name:</strong> Martin Joosep Reiljan</li>
-          <li><strong>Location:Albu/Tallinn</strong></li>
-          <li><strong>Occupation:Tarkvaraarendaja</strong></li>
-          <li><strong>Bio:</strong>Hello! My name is Martin Joosep Reiljan and I am a passionate student interested in the field of IT. Currently, I am studying information technology in Estonia and I am delighted to be studying in a country known for its innovative and technology-oriented culture. I am particularly interested in the various uses of technology in Estonia, from e-government initiatives to cutting-edge startups. I am always ready to learn about new trends and developments in the IT field, and I am constantly seeking new opportunities to gain practical experience and expand my knowledge. I am interested in participating in industry events and meeting with various IT professionals. I hope to contribute to the development and success of Estonia's IT industry in the future.</li>
-        </ul>
-      </div>
-    </section>
+<section class="about">
+  <div class="container">
+    <h2 class="about__heading">About Me</h2>
+    <ul class="about__list">
+      <li class="about__item"><strong>Name:</strong> Martin Joosep Reiljan</li>
+      <li class="about__item"><strong>Location:</strong> Albu/Tallinn</li>
+      <li class="about__item"><strong>Occupation:</strong> Tarkvaraarendaja</li>
+      <li class="about__item about__item--bio"><strong>Bio:</strong> Hello! My name is Martin Joosep Reiljan and I am a passionate student interested in the field of IT. Currently, I am studying information technology in Estonia and I am delighted to be studying in a country known for its innovative and technology-oriented culture. I am particularly interested in the various uses of technology in Estonia, from e-government initiatives to cutting-edge startups. I am always ready to learn about new trends and developments in the IT field, and I am constantly seeking new opportunities to gain practical experience and expand my knowledge. I am interested in participating in industry events and meeting with various IT professionals. I hope to contribute to the development and success of Estonia's IT industry in the future.</li>
+    </ul>
+  </div>
+</section>
+
     
     <section id="skills">
       <div class="container">
@@ -127,7 +128,7 @@
             <div class="project-box">
               <h3 class="project-title">Project 1</h3>
               <p class="project-description">
-                <a href="https://github.com/freduard/2022-projekt-ryhm2" target="_blank">2022-projekt-rühm2</a>
+                <a class ="freduard" href="https://github.com/freduard/2022-projekt-ryhm2" target="_blank">2022-projekt-rühm2</a>
               </p>
             </div>
           </li>
@@ -143,21 +144,28 @@
               <p class="project-description">Veebiprojekt</p>
             </div>
           </li>
-        </ul>
-      </div>
+        </ul
+        </div>
     </section>
     <script src="app.js"></script>
 
 
 
-    <div id="hire-me-box">
-      <h2>Hire Me (doesn't work)</h2>
-      <form>
-        <label for="email">Email here:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="description">Description:</label>
-        <textarea id="description" name="description" required></textarea>
-        <button type="submit">Send</button>
-      </form>
-    </div>
     
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="contact">
+          <h3>Contact Us</h3>
+          <p>Email: example@email.com</p>
+          <p>Phone: 123-456-7890</p>
+        </div>
+        <div class="follow-us">
+          <h3>Follow Us</h3>
+          <div class="social-media">
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/900px-Facebook_Logo_%282019%29.png" alt="Facebook"></a>
+            <a href="#"><img src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-twitter-social-media-round-icon-png-image_6315985.png" alt="Twitter"></a>
+            <a href="#"><img src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-instagram-icon-png-image_6315974.png" alt="Instagram"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
