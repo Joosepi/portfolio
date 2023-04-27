@@ -42,7 +42,7 @@
 	position: fixed;
 	width: 100%;
 	z-index: 999;
-	background: linear-gradient(90deg, #087E8B, #dfe0e0);
+	background: linear-gradient(90deg, #222222, #dfe0e0);
 	padding: 20px;
   }
   
@@ -61,7 +61,7 @@
   
   #hero {
 	height: 100vh;
-	background: linear-gradient(10deg, #292929, #dfe0e0);
+	background: linear-gradient(100deg, #292929 80%, #dfe0e0 20%);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -147,6 +147,23 @@
 	width: 100%;
 	z-index: 999;
 	}
+
+	.header-animation {
+		background: linear-gradient(-70deg, #222222 80%, #5d5d5d 0%);
+		background-size: 400% 400%;
+		animation: gradient 20s ease infinite;
+	  }
+	  @keyframes gradient {
+		0% {
+		  background-position: 0% 50%;
+		}
+		40% {
+		  background-position: 100% 50%;
+		}
+		100% {
+		  background-position: 0% 50%;
+		}
+	  }
 	
 	nav ul {
 	display: flex;
@@ -162,28 +179,57 @@
 	
 	
 	#hero {
-	height: 100vh;
-	background-size: cover;
-	background-position: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	color: #fff;
-	text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
-	}
-	
-	#hero h2 {
-	font-size: 48px;
-	margin-bottom: 20px;
-	}
-	
-	#hero p {
-	font-size: 24px;
-	max-width: 600px;
-	margin-bottom: 40px;
-	}	
+		position: relative;
+		height: 100vh;
+		overflow: hidden;
+	  }
+	  
+	  #hero .hero-content {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		z-index: 1;
+	  }
+	  
+	  #hero:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(-45deg,#222222 60%,#5d5d5d 20%);
+		background-size: 400% 400%;
+		animation: gradient 15s ease infinite;
+		z-index: -1;
+	  }
+	  
+	  @keyframes gradient {
+		0% {
+		  background-position: 0% 50%;
+		}
+		50% {
+		  background-position: 100% 50%;
+		}
+		100% {
+		  background-position: 0% 50%;
+		}
+	  }
+	  
+	  #hero h2 {
+		font-size: 48px;
+		margin-bottom: 20px;
+		color: #fff;
+	  }
+	  
+	  #hero p {
+		font-size: 24px;
+		max-width: 600px;
+		margin-bottom: 40px;
+		color: #fff;
+	  }
 
 
 	#about {
